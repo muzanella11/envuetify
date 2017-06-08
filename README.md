@@ -1,4 +1,4 @@
-# ex
+# Envuetify
 
 > A Vue.js project
 
