@@ -20,7 +20,7 @@
       </v-list>
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
-        <v-list-item v-for="item in items" :key="item">
+        <v-list-item v-for="item in items" :key="item.title">
           <v-list-tile>
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
@@ -55,11 +55,18 @@ export default {
       left: false,
       right: false,
       mini: false,
-      items: false
+      items: [{
+        icon: 'home',
+        title: 'Home'
+      }]
     }
   }
 }
 </script>
+
+<style lang="stylus">
+  @import './stylus/main'
+</style>
 
 <style>
 /*#app {
